@@ -66,7 +66,11 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
-  smoothSpeed: 7.5
+  smoothLightSpeed: 7.5
+  smoothWalkSpeed: 10
+  rightOffset: 0.2
+  forwardOffset: 0.15
+  upOffset: -0.1
   light: {fileID: 0}
 --- !u!1 &5090612284474371979
 GameObject:

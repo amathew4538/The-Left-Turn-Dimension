@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("References")]
+    public Transform playerFlashlight;
+
     [Header("Movement Actions")]
     public InputAction moveAction;
     public InputAction jumpAction;

@@ -5,7 +5,8 @@ public class CameraController : MonoBehaviour
 {
     [Header("References")]
     public Transform playerBody;
-    
+    public Transform playerFlashlight;
+
     [Header("Actions")]
     public InputAction lookAction;
     public InputAction unlockCursorAction;
@@ -15,6 +16,7 @@ public class CameraController : MonoBehaviour
     public float sensitivity = 0.1f;
     public float upperLookLimit = 80f;
     public float lowerLookLimit = -80f;
+    public float smoothSpeed = 7.5f;
 
     private float xRotation = 0f;
 
@@ -42,7 +44,7 @@ public class CameraController : MonoBehaviour
         if (xRotation > 180) xRotation -= 360f;
     }
 
-    void Update()
+    void LateUpdate()
     {
         HandleCursorLock();
 
@@ -61,6 +63,12 @@ public class CameraController : MonoBehaviour
             xRotation = Mathf.Clamp(xRotation, lowerLookLimit, upperLookLimit);
 
             transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+
+            if (playerFlashlight != null)
+            {
+                playerFlashlight.position = transform.position + (transform.right * 0.2f) + (transform.forward * 0.15f) + (transform.up * -0.1f);
+                playerFlashlight.rotation = Quaternion.Slerp(playerFlashlight.rotation, Quaternion.Euler(xRotation, playerBody.eulerAngles.y, 0f), 1.0f - Mathf.Exp(-smoothSpeed * Time.deltaTime));
+            }
         }
     }
 
