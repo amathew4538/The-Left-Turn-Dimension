@@ -55,7 +55,7 @@ public class CameraController : MonoBehaviour
 
             // Rotate player body left/right
             playerBody.Rotate(Vector3.up * mouseX);
-            
+
             // Rotate camera up/down
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, lowerLookLimit, upperLookLimit);

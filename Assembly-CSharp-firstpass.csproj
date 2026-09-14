@@ -45,16 +45,16 @@
   <ItemGroup>
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/pt-BR/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/ko/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/it/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/ru/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/it/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/cs/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/fr/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/ja/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/pl/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/tr/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.dll" />
-    <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/zh-Hant/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/de/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/zh-Hant/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/zh-Hans/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/The Left-Turn Dimension/Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Roslyn4.0/es/Unity.Cloud.Gltfast.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="/Users/amathew4538/Applications/Unity/6000.7.0a6/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
@@ -720,6 +720,10 @@
       <HintPath>/Users/amathew4538/Applications/Unity/6000.7.0a6/Unity.app/Contents/Resources/Scripting/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Cloud.Gltfast.Unsafe">
+      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.Unsafe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>Library/PackageCache/com.unity.collections@68ca0bddc9d4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
@@ -732,8 +736,20 @@
       <HintPath>Library/PackageCache/com.unity.ext.nunit@f6178be85c6e/net472/unity-custom/nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Cloud.Gltfast.Text.Json">
+      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.Text.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Cloud.Gltfast.IO.Pipelines">
+      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.IO.Pipelines.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Cloud.Gltfast.Text.Encodings.Web">
+      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.Text.Encodings.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -746,22 +762,6 @@
     </Reference>
     <Reference Include="Microsoft.CodeAnalysis">
       <HintPath>Library/PackageCache/com.unity.pipeline@9bb4172c603c/Runtime/Plugins/CodeAnalysis/Microsoft.CodeAnalysis.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Cloud.Gltfast.Unsafe">
-      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.Unsafe.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Cloud.Gltfast.Text.Json">
-      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.Text.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Cloud.Gltfast.IO.Pipelines">
-      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.IO.Pipelines.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Cloud.Gltfast.Text.Encodings.Web">
-      <HintPath>Library/PackageCache/com.unity.cloud.gltfast@88a80aa7a449/Plugins/Unity.Cloud.Gltfast.Text.Encodings.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -1528,16 +1528,16 @@
       <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Collections.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
