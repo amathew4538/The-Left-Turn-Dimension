@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8fa0258c-e615-4f4f-bab4-60b412637026}">
+		<property name="assetPath">
+			<value>Habanera (by Bizet) - Bizet.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>124.08163265306122</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7edcb674-7ad2-4cf7-a0b8-9e3527639cdd}</destination>
+		</relationship>
+	</object>
+</objects>
